@@ -2,6 +2,8 @@
 Code for a simple survey app backend logic
 
 Request urls detail:
+
+
 QA Table:
 Question-AnswerOptions-CorrectAnswer
 create table t_survey_qa (question varchar2(100), answer varchar2(100), correctind number(1));

@@ -1,0 +1,28 @@
+Logic involved for important requests:
+
+1. Add question (/addQA)
+   When the survey creator adds a question, i have made an asumption that while adding the multiple choices, he also adds an 
+   indicator against the correct answers. So that this data can be used to identify the correct answer for the survey put in 
+   by the user.
+   Note: Though this data is not used in any service, this can be used to provide the users with the number of correct answers.
+
+2. Percentage distribution across the multiple choice answers for a particular question.
+
+   Let's say for a question we have 3 multiple choice(a,b,c). And the user selects a,b.
+   So number of answers selected : a =1 , b= 1, c =0
+   Percentage distribution : a = (a*100)/(a+b+c) = 100/2 = 50%
+                             b = 50%
+                             c =  0%
+   The above is correct when there is just one survey made.
+   Now let's say there is a total of 3 surveys made by different user.
+   Assume, each survey puts the answer as below:
+   Survey 1 : Question One Answer -> a,b,c
+   Survey 2 : Question One Answer -> a,b
+   Survey 3 : Question One Answer -> a,c
+   Total : a = 3, b = 2, c =2
+   % Distribution of a = (3*100)/7 ~ 43%
+   % Distribution of b = (2*100)/7 ~ 28%
+   % Distribution of c = (2*100)/7 ~ 28%
+
+   
+   

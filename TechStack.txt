@@ -5,6 +5,7 @@ Below is the Tech Stack used:
 4. Postman to check the request/response
 5. Simple JDBC to connect to Database. 
 6. Used Oracle Express Edition to create a local Oracle DB.
+7. Mockito and Spring Mock for test.
 
 Queries used to create the table ( As of now to keep it simple,No unique constraint used 
 and table is designed using the 1st Normal Form, keeping in mind the scope of problem statement.
